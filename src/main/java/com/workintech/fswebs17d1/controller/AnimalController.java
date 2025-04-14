@@ -14,7 +14,7 @@ import java.util.Map;
 public class AnimalController {
     private Map<Integer, Animal> animals;
 
-    @PostConstruct // Proje ayağa kalkarken method devreye giriyor ve işlemleri yapıyor, obje oluşturulmuş; maymun eklenmiş şekilde geliyor
+    @PostConstruct // Proje ayağa kalkarken method devreye giriyor ve işlemleri yapıyor, obje oluşturulmuş; maymun eklenmiş   şekilde geliyor
     public void loadAll() {
         System.out.println("post construct çalıştı.");
         this.animals = new HashMap<>(); // animal objesi oluşturuldu
